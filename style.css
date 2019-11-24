@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+section {padding: 40px 20px;}
+
+menu {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.mainMenu,
+.categoriesMenu,
+.WoomenMenu {
+    width: 25vw;
+    height: 5vh;
+    background-color: #4c996b;
+    text-align: center;
+    color: white;
+    border: 1px solid #3f8059;
+    line-height: 5vh;
+}
+
+.blockCategories,
+.blockWoomen {display: none;}
+
+.mainMenu:hover,
+.categoriesMenu:hover,
+.WoomenMenu:hover {
+    background-color: #3f8059;
+    cursor: pointer;
+}
+
+.categories:hover .blockCategories {
+    display: block;
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+.woomen:hover .blockWoomen {
+    display: block;
+    position: relative;
+    left: 24.9vw;
+    top: -5vh;
+}
